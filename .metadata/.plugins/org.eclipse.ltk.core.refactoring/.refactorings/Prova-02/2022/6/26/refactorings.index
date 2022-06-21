@@ -1,0 +1,14 @@
+1655762293184	Rename package 'br.edu.univas.si7.aula01'
+1655762309045	Rename package 'br.edu.univas.si7.aula01.controller'
+1655762334900	Rename package 'br.edu.univas.si7.aula01.controller.exception'
+1655762348406	Rename package 'br.edu.univas.si7.aula01.dto'
+1655762361594	Rename package 'br.edu.univas.si7.aula01.model'
+1655762379921	Rename package 'br.edu.univas.si7.aula01.model.support'
+1655762395081	Rename package 'br.edu.univas.si7.aula01.repository'
+1655763737186	Delete element
+1655767465481	Rename type 'MessageMongoRepository'
+1655769907793	Delete element
+1655771354890	Delete element
+1655771816505	Rename package 'br.edu.univas.si7.aula01.service'
+1655777326122	Rename type 'Aula01Application'
+1655827094914	Rename type 'CustomerRepository'

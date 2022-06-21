@@ -1,0 +1,5 @@
+package br.edu.univas.si7.Prova02.service;
+
+public class AuditingService {
+
+}

@@ -1,0 +1,13 @@
+package br.edu.univas.si7.Prova02.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import org.springframework.stereotype.Repository;
+
+import br.edu.univas.si7.Prova02.model.Customer;
+
+
+@Repository
+public interface CustomerRepository extends JpaRepository<Customer, String> {
+
+}

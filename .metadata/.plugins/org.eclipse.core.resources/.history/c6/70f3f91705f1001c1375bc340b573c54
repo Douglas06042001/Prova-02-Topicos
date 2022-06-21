@@ -1,0 +1,100 @@
+package br.edu.univas.si7.Prova02.model;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+
+
+@Entity
+public class Customer {
+	
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private String Id;
+
+	@Id
+	private String cpf;
+	private String name;
+	private String birthdate;
+	private String gender;
+	private String email;
+	private String loyalityrate;
+
+
+	public Customer() {
+	}
+
+	public Customer(String Id,String cpf, String name, String birthdate,String gender,String email,String loyalityrate) {
+		super();
+		this.Id=Id;
+		this.cpf = cpf;
+		this.name = name;
+		this.birthdate = birthdate;
+		this.gender = gender;
+		this.email = cpf;
+		this.loyalityrate=loyalityrate;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getBirthdate() {
+		return birthdate;
+	}
+
+	public void setBirthdate(String birthdate) {
+		this.birthdate = birthdate;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getLoyalityrate() {
+		return loyalityrate;
+	}
+
+	public void setLoyalityrate(String loyalityrate) {
+		this.loyalityrate = loyalityrate;
+	}
+
+	public String getId() {
+		return Id;
+	}
+
+	public void setId(String id) {
+		Id = id;
+	}
+	
+	
+
+	
+}

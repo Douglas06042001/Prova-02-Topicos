@@ -1,0 +1,96 @@
+package br.edu.univas.si7.Prova02.model;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import br.edu.univas.si7.Prova02.model.support.MessagePriority;
+
+@Entity
+@Document(collation = "Customers")
+public class Customer {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private String cpf;
+	private String name;
+	private Date birthdate;
+	private String gender;
+	private String email;
+	private String loyalityrate;
+	
+	
+	
+
+	public Customer() {
+	}
+
+	public Customer(String cpf, String name, Date birthdate,String gender,String email,String loyalityrate) {
+		super();
+		this.cpf = cpf;
+		this.name = name;
+		this.birthdate = birthdate;
+		this.gender = gender;
+		this.email = cpf;
+		this.loyalityrate=loyalityrate;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Date getBirthdate() {
+		return birthdate;
+	}
+
+	public void setBirthdate(Date birthdate) {
+		this.birthdate = birthdate;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getLoyalityrate() {
+		return loyalityrate;
+	}
+
+	public void setLoyalityrate(String loyalityrate) {
+		this.loyalityrate = loyalityrate;
+	}
+	
+	
+
+	
+}
